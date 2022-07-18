@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .field{
+        border: 2px solid;
+
+    }
+    .bat{
+        height: 300px;
+        width: 300px;
+        transition: transform 0.1s ease-in;
+        
+    }
+
+    .ball{
+        height: 50px;
+        width: 50px;
+        background-color: brown;
+        border-radius: 25px;
+        position: relative;
+        left: 460px;
+        transition: transform 1s ease-out 0.1s;
+    }
+
+    .field:hover .ball{
+        transform: translate(1390px, -100px);
+    }
+
+    .field:hover .bat{
+        transform: rotate(-70deg);
+        transform-origin: top right;
+    }
+</style>
+
+</head>
+<body>
+    <div class="field">
+        <img class="bat" src="images/AST20CricketBatSide_1024x.webp" alt="">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>
